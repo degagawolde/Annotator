@@ -443,7 +443,7 @@ for i in range(len(anatomy_types)):
     anatomical_annotation.add_command(label=anatomy_type_names[i], command=partial(change_label,label_colors[i],9,"anatomy",dash_types[i],anatomy_types[i],anatomy_type_names[i]))
 
 
-menubar.add_cascade(label="Brain Stroke Anatomy", menu=anatomical_annotation)
+menubar.add_cascade(label="Lung Anatomy", menu=anatomical_annotation)
 annotationmenu=tk.Menu(menubar, tearoff=0)
 annotationmenu.add_command(label="Save Annotations", command=savejson)
 annotationmenu.add_command(label="Load Annotations", command=loadjson)
